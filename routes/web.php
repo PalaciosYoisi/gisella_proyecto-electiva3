@@ -14,9 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio');
 });
 
-Route::get('/inicio', function () {
+Route::get('/panel/administrador', function () {
+    return view('inicio');   //------> Retorna la vista inicio.blade.php
+});
+
+Route::get('/panel/prestador', function () {
+    return view('inicio');   //------> Retorna la vista inicio.blade.php
+});
+
+Route::get('/panel/turista', function () {
     return view('inicio');   //------> Retorna la vista inicio.blade.php
 });
