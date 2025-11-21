@@ -6,11 +6,12 @@ use MongoDB\Laravel\Eloquent\Model;
 
 class Favoritos extends Model
 {
-    protected $table = 'favoritos';
-    protected $primaryKey = '_id';
+    protected $connection = 'mongodb';
+    protected $collection = 'favoritos';
+    protected $primaryKey = 'id_favorito';
 
     protected $fillable = [
-        'id',
+        'id_favorito',
         'id_usuario',
         'id_publicacion',
         'fecha_agregado'

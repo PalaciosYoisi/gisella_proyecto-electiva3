@@ -6,11 +6,12 @@ use MongoDB\Laravel\Eloquent\Model;
 
 class Mensajes extends Model
 {
-    protected $table = 'mensajes';
-    protected $primaryKey = '_id';
+    protected $connection = 'mongodb';
+    protected $collection = 'mensajes';
+    protected $primaryKey = 'id_mensaje';
 
     protected $fillable = [
-        'id',
+        'id_mensaje',
         'id_remitente',
         'id_destinatario',
         'mensaje',

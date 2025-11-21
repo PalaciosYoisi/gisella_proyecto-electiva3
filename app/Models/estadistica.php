@@ -6,11 +6,12 @@ use MongoDB\Laravel\Eloquent\Model;
 
 class Estadistica extends Model
 {
-    protected $table = 'estadisticas';
-    protected $primaryKey = '_id';
+    protected $connection = 'mongodb';
+    protected $collection = 'estadisticas';
+    protected $primaryKey = 'id_estadistica';
 
     protected $fillable = [
-        'id',
+        'id_estadistica',
         'id_publicacion',
         'fecha',
         'visitas',

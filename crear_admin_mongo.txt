@@ -1,0 +1,30 @@
+// Código para ejecutar en MongoDB Shell (mongosh)
+// Copia y pega TODO el código de una vez, sin los puntos suspensivos
+
+use exploraquibdo
+
+db.createCollection("usuarios")
+db.createCollection("estadisticas")
+db.createCollection("favoritos")
+db.createCollection("mensajes")
+db.createCollection("publicaciones")
+db.createCollection("reservas")
+db.createCollection("reseñas")
+db.createCollection("reportes")
+
+db.usuarios.insertOne({
+    id_usuario: ObjectId().toString(),
+    tipo_usuario: "administrador",
+    nombre_completo: "Administrador Principal",
+    correo: "admin@exploraquibdo.com",
+    contraseña: "$2y$12$//SzmFC.x9ZhYxkmhrhcT.2LjyU2DlFlnXGpml4deo8v9nJTfQzFi",
+    telefono: "+57 300 000 0000",
+    fecha_registro: new Date(),
+    estado: "activo",
+    token_verificacion: null
+})
+
+// Credenciales:
+// Correo: admin@exploraquibdo.com
+// Contraseña: admin123
+

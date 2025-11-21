@@ -6,16 +6,17 @@ use MongoDB\Laravel\Eloquent\Model;
 
 class Reseñas extends Model
 {
-    protected $table = 'reseñas';
-    protected $primaryKey = '_id';
+    protected $connection = 'mongodb';
+    protected $collection = 'reseñas';
+    protected $primaryKey = 'id_reseña';
 
     protected $fillable = [
-        'id',
+        'id_reseña',
         'calificacion',
         'comentario',
-        'id_experiencia',
+        'id_publicacion', // Cambiado de id_experiencia a id_publicacion para consistencia
         'id_usuario',
-        'fecha_comentario',
+        'fecha_reseña', // Cambiado de fecha_comentario a fecha_reseña para consistencia
         'estado'
     ];
 }

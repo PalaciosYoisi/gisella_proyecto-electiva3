@@ -1,0 +1,409 @@
+.inicio-page section.py-5,
+.inicio-page section.py-5.parallax,
+.inicio-page section.panel-section,
+.inicio-page section.py-5.experiencias-destacadas,
+.inicio-page section,
+.inicio-page .container,
+.inicio-page .row {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.inicio-page .section-title {
+  margin-top: 0 !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.inicio-page .panel-section .panel-card,
+.inicio-page .experiencias-destacadas .exp-card {
+  margin-bottom: 0.2rem !important;
+}
+
+.inicio-page .hero-section {
+  min-height: 28vh !important;
+}
+
+/* Ajuste especial para la sección del mapa y la superior */
+.inicio-page #nosotros {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.inicio-page #nosotros .container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.inicio-page section.py-5,
+.inicio-page section.py-5.parallax,
+.inicio-page section.panel-section,
+.inicio-page section.py-5.experiencias-destacadas {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+
+.inicio-page .container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.inicio-page .container > .row,
+.inicio-page .row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.inicio-page .section-title {
+  margin-top: 0.1rem !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.inicio-page .panel-section .panel-card,
+.inicio-page .experiencias-destacadas .exp-card {
+  margin-bottom: 0.5rem !important;
+}
+
+.inicio-page .hero-section {
+  min-height: 32vh !important;
+}
+/* Estilos básicos y paleta turística */
+html {
+  font-size: 16px;
+}
+:root{
+  --primary-color:#0067a3; /* azul océano */
+  --secondary-color:#f39c12; /* ocre/dorado */
+  --muted:#6c757d;
+  --card-bg: #ffffff;
+  --hero-overlay: rgba(0,0,0,0.35);
+  --radius: .7rem;
+  --footer-bg: #7a5c4a;
+  --footer-text: #fff;
+  --footer-link: #ffe0a3;
+  font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+body, .inicio-page {
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+
+.navbar {
+  background: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+}
+.navbar .navbar-brand {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 1.7rem;
+  color: var(--primary-color);
+}
+.navbar .nav-link {
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: color .18s;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: var(--secondary-color);
+}
+
+/* HERO SLIDER */
+
+/* HERO ESTÁTICO */
+.hero-section {
+  min-height: 60vh !important;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.hero-section .hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.38);
+  z-index: 1;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-section h1, .hero-section .display-3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 2px 16px #000;
+}
+.hero-section p.lead {
+  font-size: 1.35rem;
+  color: #fff;
+  text-shadow: 0 2px 12px #000;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.hero-section .btn-lg {
+  font-size: 1.18rem;
+  padding: 0.85em 2.2em;
+  border-radius: 2em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  transition: transform .13s, box-shadow .13s;
+}
+.hero-section .btn-lg:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.hero-section .btn-warning {
+  color: #fff;
+  background: var(--secondary-color);
+  border: none;
+}
+.hero-section .btn-warning:hover {
+  background: #e08e0b;
+}
+.hero-section .btn-primary {
+  background: var(--primary-color);
+  border: none;
+}
+.hero-section .btn-primary:hover {
+  background: #005683;
+}
+.pulse{animation: pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
+
+/* EXPERIENCIAS DESTACADAS */
+.experiencias-destacadas {
+  background: linear-gradient(180deg, #fafdff 0%, #f3f7f9 100%);
+}
+.experiencias-destacadas .exp-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.08);
+  transition: transform .22s, box-shadow .22s;
+  border: none;
+}
+.experiencias-destacadas .exp-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(16,24,40,0.13);
+}
+.experiencias-destacadas .exp-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+.experiencias-destacadas .card-title {
+  color: var(--primary-color);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+}
+.experiencias-destacadas .card-text {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.experiencias-destacadas .badge {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  border-radius: 1.2em;
+}
+
+/* DESTINOS */
+.destination-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+  border: none;
+  transition: box-shadow .18s;
+}
+.destination-card:hover {
+  box-shadow: 0 12px 32px rgba(16,24,40,0.13);
+}
+.destination-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.destination-card .card-title {
+  color: var(--primary-color);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+}
+.destination-card .badge {
+  font-size: 0.95rem;
+  padding: 0.4em 0.9em;
+  border-radius: 1.1em;
+}
+
+/* Paneles y contacto */
+.panel-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  padding: 1.5rem 1.2rem;
+  border: none;
+}
+.panel-card h5 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.panel-card .list-unstyled li {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+.panel-card a {
+  color: var(--primary-color);
+  transition: color .18s;
+}
+.panel-card a:hover {
+  color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.05rem;
+}
+.footer a {
+  color: var(--footer-link);
+  text-decoration: none;
+  margin-right: 1.2em;
+  transition: color .18s;
+}
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Botones */
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.btn-primary:hover {
+  background: #005683;
+  border-color: #005683;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .hero-img { height: 32vh; }
+  .carousel-caption { padding: 1rem 1.2rem; }
+}
+@media (max-width: 767px) {
+  .hero-img { height: 22vh; }
+  .experiencias-destacadas .exp-card .card-img-top,
+  .destination-card .card-img-top { height: 140px; }
+  .carousel-caption { font-size: 1rem; }
+}
+
+/* Utilidades y detalles */
+.section-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
+}
+.fade-in{animation:fadeInUp .6s ease both}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.pulse{animation: pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+body{background:#f8f9fa;color:#222}
+.navbar{background:#fff}
+.navbar .navbar-brand{font-weight:700;color:var(--primary-color)}
+
+/* Hero */
+.hero-section{position:relative;min-height:45vh;display:flex;align-items:center}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.video-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%);z-index:1}
+.hero-section .container{position:relative;z-index:2}
+
+/* Cards */
+.card.destination-card{border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+.card .card-img-top{height:220px;object-fit:cover}
+
+/* Feature icons */
+.feature-icon{font-size:28px;background:linear-gradient(90deg,var(--secondary-color),#ffb84d);color:#fff;width:72px;height:72px;border-radius:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+
+/* Panels */
+.panel-card{background:var(--card-bg);border-radius:var(--radius);box-shadow:0 6px 18px rgba(16,24,40,0.06);padding:18px}
+.section-title{color:var(--primary-color);font-weight:700}
+
+/* Footer */
+.footer{padding:40px 0;background:#fff;color:#333}
+.footer a{color:var(--muted);text-decoration:none}
+.footer a:hover{color:var(--primary-color)}
+
+/* Buttons */
+.btn-primary{background:var(--primary-color);border-color:var(--primary-color)}
+.btn-primary:hover{background:#005683;border-color:#005683}
+
+/* Responsive tweaks */
+@media (max-width:767px){
+  .card .card-img-top{height:180px}
+}
+
+/* Small UI niceties */
+.fade-in{animation:fadeInUp .6s ease both}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+/* Accessibility */
+img[alt=""]{opacity:.9}
+
+/* Utility */
+.pulse{animation: pulse 2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+/* Experiencias destacadas */
+.experiencias-destacadas{background:linear-gradient(180deg, rgba(250,252,253,1) 0%, rgba(243,247,249,1) 100%)}
+.experiencias-destacadas .exp-card{border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 24px rgba(16,24,40,0.06);transition:transform .22s ease,box-shadow .22s ease}
+.experiencias-destacadas .exp-card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(16,24,40,0.10)}
+.experiencias-destacadas .exp-card .card-img-top{height:200px;object-fit:cover}
+.experiencias-destacadas .card-body{display:flex;flex-direction:column;justify-content:space-between}
+.experiencias-destacadas .card-title{color:var(--primary-color);font-weight:700}
+.experiencias-destacadas .card-text{color:var(--muted);margin-bottom:12px}
+
+@media (max-width:767px){
+  .experiencias-destacadas .exp-card .card-img-top{height:160px}
+}
+
+
+/* Espaciado vertical coherente entre secciones */
+.inicio-page section.py-5,
+.inicio-page section.py-5.parallax,
+.inicio-page section.panel-section,
+.inicio-page section.py-5.experiencias-destacadas {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+@media (max-width: 767px) {
+  .inicio-page section.py-5,
+  .inicio-page section.py-5.parallax,
+  .inicio-page section.panel-section,
+  .inicio-page section.py-5.experiencias-destacadas {
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
+  }
+}
+
+/* Ajustes finos para títulos y hero en inicio */
+.inicio-page .section-title{margin-top:0.25rem;margin-bottom:0.75rem}
+.inicio-page .hero-section{min-height:40vh}
+.inicio-page .panel-section .panel-card{padding:14px}
+
+/* Evitar márgenes extra en contenedores dentro de secciones */
+.inicio-page .container > .row{margin-top:0;margin-bottom:0}
+

@@ -6,11 +6,12 @@ use MongoDB\Laravel\Eloquent\Model;
 
 class Publicaciones extends Model
 {
-    protected $table = 'publicaciones';
-    protected $primaryKey = '_id';
+    protected $connection = 'mongodb';
+    protected $collection = 'publicaciones';
+    protected $primaryKey = 'id_publicacion';
 
     protected $fillable = [
-        'id',
+        'id_publicacion',
         'titulo_publicacion',
         'descripcion',
         'categoria',
@@ -23,6 +24,11 @@ class Publicaciones extends Model
         'url_multimedia',
         'id_autor',
         'fecha_creacion',
-        'cantidad_visitas'
+        'cantidad_visitas',
+        'duracion_horas',
+        'capacidad_maxima',
+        'incluye',
+        'no_incluye',
+        'requisitos'
     ];
 }
